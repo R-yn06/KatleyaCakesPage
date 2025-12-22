@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katleya Cakes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        background: #f9def4;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .section__pic-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0 1rem 0;
+      }
+      .section__pic-container img {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">Katleya Cakes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Katleya Cakes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links" id="menuLinks">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Profile / Hero Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/SquareLogo.png" alt="Katleya Cakes Logo" />
+      </div>
+      <div class="section__text" style="text-align:center;">
+        <p class="section__text__p1">Welcome to</p>
+        <h1 class="title">Katleya Cakes!</h1>
+        <p class="section__text__p2">established since 2014</p>
+        <p class="section__text__p3">Bringing sweetness to every customer's lives!</p>
+        <div class="btn-container" style="margin-top:1rem;">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://forms.gle/xZq2j5sTqH3wujEH6', '_blank')"
+          >
+            Survey Form
+          </button>
+          <button 
+            class="btn btn-color-1" 
+            onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" style="margin-top:1rem;">
+          <img
+            src="./assets/facebook.png"
+            alt="Our Facebook Page"
+            class="icon"
+            style="cursor:pointer;"
+            onclick="window.open('https://www.facebook.com/share/1AmcJzMVnw/?mibextid=wwXIfr', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1" style="text-align:center;">Get To Know us More</p>
+      <h1 class="title" style="text-align:center;">About us</h1>
+      <div class="section-container" style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2rem;">
+        <div class="section__pic-container">
+          <img
+            src="./assets/CoverLogo.png"
+            alt="Profile picture"
+            class="about-pic"
+            style="max-width:500px;width:100%;"
+
+          />
+        </div>
+        <div class="about-details-container" style="max-width:400px;">
+          <div class="text-container">
+            <p>
+              Since 2014, Katleya Cakes has been turning life’s sweetest moments 
+              into edible art — custom cakes, elegant pastries, handmade sugarflowers, and crafted-with-love toppers that bring every celebration to life.
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        style="display:block;margin:2rem auto 0 auto;cursor:pointer;"
+        onclick="location.href='./#products'"
+      />
+    </section>
+    <!-- Products Section -->
+    <section id="products">
+      <p class="section__text__p1" style="text-align:center;">Discover Our</p>
+      <h1 class="title" style="text-align:center;">Products</h1>
+      <div class="products experience-details-container" style="display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;">
+        <div class="product-card details-container color-container" style="max-width:250px;text-align:center;">
+          <div class="article-container">
+            <img src="assets/SquareLogo.png" alt="Chocolate Cake" class="project-img" style="width:100%;border-radius:10px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Cakes</h2>
+          <p>Customized, Rich in Flavor, and Made with sweet Love!</p>
+        </div>
+        <div class="product-card details-container color-container" style="max-width:250px;text-align:center;">
+          <div class="article-container">
+            <img src="assets/SquareLogo.png" alt="Cupcakes" class="project-img" style="width:100%;border-radius:10px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Kakanin</h2>
+          <p>Native Traditional Kakanin that goes way back to it's roots, a filipino heritage</p>
+        </div>
+        <div class="product-card details-container color-container" style="max-width:250px;text-align:center;">
+          <div class="article-container">
+            <img src="assets/SquareLogo.png" alt="Pastries" class="project-img" style="width:100%;border-radius:10px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Pastries</h2>
+          <p>Diverse options of pastries perfect for your special occasions or just the daily cravings!</p>
+        </div>
+          <div class="product-card details-container color-container" style="max-width:250px;text-align:center;">
+          <div class="article-container">
+            <img src="assets/SquareLogo.png" alt="Pastries" class="project-img" style="width:100%;border-radius:10px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Sugar Flowers</h2>
+          <p>Edible flowers perfect for your Topping and Cake Decoration</p>
+        </div>
+        <div class="product-card details-container color-container" style="max-width:250px;text-align:center;">
+          <div class="article-container">
+            <img src="assets/SquareLogo.png" alt="Pastries" class="project-img" style="width:100%;border-radius:10px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Cake Toppers</h2>
+          <p>The perfect finishing touch for any cake, our cake toppers are crafted with love and attention to detail.</p>
+        </div>
+        <div class="product-card details-container color-container" style="max-width:250px;text-align:center;">
+          <div class="article-container">
+            <img src="assets/SquareLogo.png" alt="Pastries" class="project-img" style="width:100%;border-radius:10px;" />
+          </div>
+          <h2 class="experience-sub-title project-title">Baking Classes</h2>
+          <p>Learn the art of baking with our expert-led classes, perfect for all skill levels!</p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        style="display:block;margin:2rem auto 0 auto;cursor:pointer;"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1" style="text-align:center;">Get in Touch with us</p>
+      <h1 class="title" style="text-align:center;">Contact Us</h1>
+      <div class="contact-info-upper-container" style="display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;">
+        <div class="contact-info-container" style="display:flex;align-items:center;gap:1rem;">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:katleyacakesandpastries@gmail.com">katleyacakesandpastries@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container" style="display:flex;align-items:center;gap:1rem;">
+          <img
+            src="./assets/faceboook.png"
+            alt="Facebook icon"
+            class="icon contact-icon facebook-icon"
+          />
+          <p><a href="https://www.facebook.com/share/1DfZM4eCci/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook Page</a></p>
+        </div>
+        <div class="contact-info-container" style="display:flex;align-items:center;gap:1rem;">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+63 927 975 2701">+63 927 975 2701</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p style="text-align:center;">Copyright &#169; 2025 Ryan Pierre Caraos. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menuLinks = document.getElementById('menuLinks');
+        menuLinks.classList.toggle('open');
+      }
+    </script>
+    <style>
+      /* Responsive Navigation */
+      #hamburger-nav { display: none; }
+      @media (max-width: 900px) {
+        #desktop-nav { display: none; }
+        #hamburger-nav { display: flex; align-items: center; padding: 1rem; }
+        .hamburger-icon {
+          width: 30px; height: 25px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer;
+        }
+        .hamburger-icon span {
+          display: block; height: 4px; background: #ffffff; border-radius: 2px; width: 100%;
+        }
+        .menu-links {
+          display: none;
+          flex-direction: column;
+          list-style: none;
+          padding: 1rem;
+          margin: 0;
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          z-index: 100;
+        }
+        .menu-links.open { display: flex; }
+        .menu-links li { margin: 0.5rem 0; }
+        .menu-links a { color: #333; text-decoration: none; padding: 0.5rem 1rem; display: block; }
+      }
+      @media (min-width: 901px) {
+        #desktop-nav { display: flex; }
+        #hamburger-nav { display: none; }
+      }
+    </style>
+  </body>
+</html>
