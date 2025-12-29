@@ -176,8 +176,7 @@ section {
 
 .section__pic-container {
   display: flex;
-  
-  width: 1fr;
+  width: 100%;
   justify-content: center;
   flex-wrap: center;
   max-width: 2000px;
@@ -417,7 +416,7 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background-color:#080a60;
-  margin: 2rem auto;
+  margin: 1px;
   padding: 0.5rem;
 }
 
